@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,amazon, prime, shopping, ddp, dailyprimeproduct, save, money">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/index.css" rel="stylesheet"/>
+
+    <title>Daily Prime Product</title>
+
+    <style>
+        footer{
+            text-align:center;
+            font-size: 12pt;
+            background-color: rgb(32, 56, 194);
+            color: rgba(236, 117, 20, 0.644);
+            width: auto;
+            padding:.5%;        }
+        div{
+            flex:1;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px; 
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover { 
+            color: #f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute; 
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;} /* decreases padding-top for mobile */ 
+            .sidenav a {font-size: 18px;} /* decreases link font-size for mobile */
+        }
+    </style>
+
+</head>
+<body>
+<article>
+    
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="database.html">Database</a>
+        </div>
+        <div id="main">
+            <span id="noprint" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> 
+            <header>
+                <hr />
+                <h1>Daily Prime Product</h1>
+                <hr />
+            </header>
+            <section>
+                <hr/>
+                <h2>About Us</h2>
+                <hr/>
+                <p>
+                    <a href="media/dppicon.jpg"><img alt="air pods" src="media/dppicon.jpg" sytle="height:150px; width:200px"></a><br>
+
+                    We are Daily Prime Product. Our goal is to help you find items <br>
+                    you'd like to buy at the cheapest possible price. We work together<br>
+                    with Amazon to provide you with the most reliable and safe shopping<br>
+                    experience. See the hottest products everyday on our <a href="https://www.instagram.com/dailyprimeproduct/">Instagram</a>.
+                    <br>
+                    <br>
+                    New product will be released soon.
+
+                    <h3><a href="https://amzn.to/2SpIftC">BUY HERE!</a></h3>
+                </p>
+            </section>
+            <footer>
+                    <div class="icon-bar">
+                        <p style="font-size:35pt">
+                        <a href="https://www.youtube.com/channel/UCateDa273gpDU6bzkH9y6Jg"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/dailyprimeproduct/"><i class="fa fa-instagram"></i></a></p>
+                        <p style="text-align:center;"> <small>&copy;Tim Stoldt December 2, 2018. Last Updated December 2, 2018</small></p>
+                    </div>
+              </footer>
+        </div>
+
+    <script>function openNav() {
+        document.getElementById("mySidenav").style.width = "250px"; 
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0"; 
+        document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+</body>
+</html>
